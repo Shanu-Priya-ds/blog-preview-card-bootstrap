@@ -10,14 +10,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+  - [AI Collaboration](#ai-collaboration)
  
 ## Overview
 
-This project is to design a staic & responsive UI for the QR code component using HTML & custom CSS.
+This project is to design a staic & responsive UI for the blog preview card using bootstrap and custom css.
 
 ### Links
 
-- Solution URL: [https://github.com/Shanu-Priya-ds/blog-preview-card]
+- Solution URL: [https://github.com/Shanu-Priya-ds/blog-preview-card-bootstrap]
 
 
 ### Built with
