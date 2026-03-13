@@ -23,26 +23,41 @@
   </style>
 </head>
 
-<body class="d-grid justify-content-center align-items-center  min-vh-100">
-  <div class="card w-30" style="width: 18rem;">
-    <img class="m-2 rounded" src="./assets/images/illustration-article.svg" alt="Blog Image.">
-    <div class="card-body">
-      <span class="badge bg-warning text-dark">Learning</span>
-      <p class="mt-2">Published <time>21 Dec 2023</time></p>
+<!-- body-flex. d-grid works, only if the card container is direct child of body
+ Since we are using grid for responsiveness, using flex -->
+<body class="d-flex flex-column justify-content-center min-vh-100">
+  
+  <!-- Grid container for responsiveness -->
+    <div class="container">
+    <div class="row justify-content-center">
+      <!-- responsive classes for different breakspoints. Replacement for media Query-->
+      <div class="col-12 col-md-6 col-lg-4">
 
-      <h5 class="card-title fw-bold">HTML & CSS foundations</h5>
-      <p class="card-text">These languages are the backbone of every website, defining structure,
-        content, and presentation.</p>
-      <div>
-        <img src="assets/images/image-avatar.webp" alt="Greg Hooper">
-        <span class="author-name fw-bold">Greg Hooper</span>
+        <div class="card shadow p-2">
+          <img class="m-2 rounded" src="./assets/images/illustration-article.svg" alt="Blog Image.">
+
+          <div class="card-body">
+            <span class="badge bg-warning text-dark">Learning</span>
+            <p class="mt-2">Published <time>21 Dec 2023</time></p>
+
+            <h5 class="card-title fw-bold">HTML & CSS foundations</h5>
+            <p class="card-text text-muted">These languages are the backbone of every website, defining structure,
+              content, and presentation.</p>
+
+            <div class="d-inline-flex align-items-center gap-2 mt-2">
+              <img src="assets/images/image-avatar.webp" alt="Greg Hooper" class="rounded-circle" width="32">
+              <span class="author-name fw-bold">Greg Hooper</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-  <div class="attribution">
+  <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Shanu Priya</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
